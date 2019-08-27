@@ -11,7 +11,9 @@
         <AssociationConnector Association="Accounting_DBModel.FK__Accountin__Custo__3C69FB99" />
         <AssociationConnector Association="Accounting_DBModel.FK__Accountin__TypeI__3D5E1FD2" ManuallyRouted="false" >
         </AssociationConnector>
-        <EntityTypeShape EntityType="Accounting_DBModel.Login" Width="1.5" PointX="3.625" PointY="3.5" />
+        <EntityTypeShape EntityType="Accounting_DBModel.Login" Width="1.5" PointX="5.375" PointY="3.875" />
+        <EntityTypeShape EntityType="Accounting_DBModel.Product" Width="1.5" PointX="7.625" PointY="2.5" />
+        <EntityTypeShape EntityType="Accounting_DBModel.Factors" Width="1.5" PointX="1.5" PointY="3.875" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

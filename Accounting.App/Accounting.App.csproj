@@ -76,11 +76,41 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="productForms\frmADDorEDITproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productForms\frmADDorEDITproduct.Designer.cs">
+      <DependentUpon>frmADDorEDITproduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productForms\frmNewFactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productForms\frmNewFactor.Designer.cs">
+      <DependentUpon>frmNewFactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productForms\frmWareHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productForms\frmWareHouse.Designer.cs">
+      <DependentUpon>frmWareHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productForms\frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productForms\frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReport.Designer.cs">
       <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,8 +162,23 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="productForms\frmADDorEDITproduct.resx">
+      <DependentUpon>frmADDorEDITproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productForms\frmNewFactor.resx">
+      <DependentUpon>frmNewFactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productForms\frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmReport.resx">
       <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productForms\frmWareHouse.resx">
+      <DependentUpon>frmWareHouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -240,6 +285,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-password-icon-20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon-21-eye-hidden_314858.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -51,6 +51,7 @@ namespace Accounting.App
             frmLogin myfrm = new frmLogin();
             if (myfrm.ShowDialog()==DialogResult.OK)
             {
+                this.Show();
                 Lbldate.Text = DateTime.Now.ToShamsi();
                 timer1.Start();
             }
@@ -63,6 +64,26 @@ namespace Accounting.App
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblTime.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void BtnEtitLogin_Click(object sender, EventArgs e)
+        {
+            frmLogin Myfrm = new frmLogin();
+            Myfrm.IsEdit = true;
+            Myfrm.ShowDialog();
+        }
+
+        private void BtnsignUP_Click(object sender, EventArgs e)
+        {
+            frmSignUp myfrm = new frmSignUp();
+            myfrm.StartPosition = FormStartPosition.CenterScreen;
+            myfrm.ShowDialog();
+        }
+
+        private void BtnProduct_Click(object sender, EventArgs e)
+        {
+            frmProduct myfrm = new frmProduct();
+            myfrm.ShowDialog();
         }
     }
 }

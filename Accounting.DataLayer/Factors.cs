@@ -12,11 +12,14 @@ namespace Accounting.DataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class Login
+    public partial class Factors
     {
-        public int LoginID { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public string FullName { get; set; }
+        public int FactorID { get; set; }
+        public System.DateTime FactorDate { get; set; }
+        public string CustomerName { get; set; }
+        public string ProductName { get; set; }
+        public int Qty { get; set; }
+        public decimal Price { get; set; }
+        public decimal TotalAmount { get; set; }
     }
 }

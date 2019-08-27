@@ -14,7 +14,53 @@ namespace Accounting.DataLayer.Contex
 
         private ICustomerRepository _CustomerRepository;
 
+        private ProductRepositories _ProductRepositories;
+
+        private GenericRepository<Factors> _FactorRepository;
+
         private GenericRepository<Accounting> _accountingrepository;
+
+        private GenericRepository<Login> _loginrepository;
+
+        private GenericRepository<Product> _productrepository;
+
+        public GenericRepository<Factors> FactorRepository
+        {
+            get
+            {
+                if (_FactorRepository == null)
+                {
+                    _FactorRepository = new GenericRepository<Factors>(db);
+                }
+                return _FactorRepository;
+            }
+
+        }
+
+        public GenericRepository<Product> ProductRepository
+        {
+            get
+            {
+                if (_productrepository == null)
+                {
+                    _productrepository = new GenericRepository<Product>(db);
+                }
+                return _productrepository;
+            }
+
+        }
+
+        public GenericRepository<Login> LoginRepository
+        {
+            get
+            {
+                if (_loginrepository == null)
+                {
+                    _loginrepository = new GenericRepository<Login>(db);
+                }
+                return _loginrepository;
+            }
+        }
 
         public GenericRepository<Accounting> accountingrepository
         {
@@ -29,6 +75,18 @@ namespace Accounting.DataLayer.Contex
 
             }
 
+        }
+
+        public IProductRepository ProductRepositories
+        {
+            get
+            {
+                if (_ProductRepositories == null)
+                {
+                    _ProductRepositories = new ProductRepositories(db);
+                }
+                return _ProductRepositories;
+            }
         }
         public ICustomerRepository CustomerRepository
         {

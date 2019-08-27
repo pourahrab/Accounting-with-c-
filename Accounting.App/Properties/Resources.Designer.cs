@@ -213,6 +213,26 @@ namespace Accounting.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide_512 {
+            get {
+                object obj = ResourceManager.GetObject("hide_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_icon_21_eye_hidden_314858 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_icon_21_eye_hidden_314858", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
@@ -246,6 +266,16 @@ namespace Accounting.App.Properties {
         internal static System.Drawing.Bitmap servicesCosts {
             get {
                 object obj = ResourceManager.GetObject("servicesCosts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap show_password_icon_20 {
+            get {
+                object obj = ResourceManager.GetObject("show_password_icon_20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

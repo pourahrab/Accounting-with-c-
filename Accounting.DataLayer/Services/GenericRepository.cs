@@ -12,6 +12,7 @@ namespace Accounting.DataLayer.Services
     {
         private Accounting_DBEntities _db;
         private DbSet<EntityType> _dbset;
+     
 
         public GenericRepository(Accounting_DBEntities db)
         {
@@ -28,6 +29,8 @@ namespace Accounting.DataLayer.Services
             }
             return query.ToList();
         }
+
+        
 
         public virtual EntityType GetById(object Id)
         {

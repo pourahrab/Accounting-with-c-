@@ -73,7 +73,7 @@ namespace Accounting.App
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             frmADDorEDIT myfrm = new frmADDorEDIT();
-            if(myfrm.ShowDialog()==DialogResult.OK);
+            if(myfrm.ShowDialog()==DialogResult.OK)
             {
                 Bindgrid();
             }

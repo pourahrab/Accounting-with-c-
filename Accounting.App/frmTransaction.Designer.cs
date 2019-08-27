@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTransaction));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.MydataGridView = new System.Windows.Forms.DataGridView();
-            this.TxtFilter = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TxtFilter = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtName = new System.Windows.Forms.TextBox();
             this.RbtnIncome = new System.Windows.Forms.RadioButton();
@@ -78,6 +78,13 @@
             this.MydataGridView.TabIndex = 1;
             this.MydataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MydataGridView_CellClick);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "FullName";
+            this.Column1.HeaderText = "نام شخص";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
             // TxtFilter
             // 
             this.TxtFilter.Location = new System.Drawing.Point(7, 22);
@@ -85,13 +92,6 @@
             this.TxtFilter.Size = new System.Drawing.Size(221, 23);
             this.TxtFilter.TabIndex = 0;
             this.TxtFilter.TextChanged += new System.EventHandler(this.TxtFilter_TextChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "FullName";
-            this.Column1.HeaderText = "نام شخص";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // label1
             // 

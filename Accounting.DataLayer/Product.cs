@@ -12,11 +12,12 @@ namespace Accounting.DataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class Login
+    public partial class Product
     {
-        public int LoginID { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public string FullName { get; set; }
+        public int ProductID { get; set; }
+        public string ProductName { get; set; }
+        public string Unit { get; set; }
+        public int QTY { get; set; }
+        public decimal Price { get; set; }
     }
 }

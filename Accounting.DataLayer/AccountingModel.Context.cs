@@ -29,5 +29,7 @@ namespace Accounting.DataLayer
         public virtual DbSet<Accounting> Accounting { get; set; }
         public virtual DbSet<AccountingTypes> AccountingTypes { get; set; }
         public virtual DbSet<Login> Login { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<Factors> Factors { get; set; }
     }
 }
